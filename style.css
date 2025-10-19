@@ -1,0 +1,177 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+  color: #222;
+}
+
+/* LOGIN */
+#loginPage {
+  display: none;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5a0ca8;
+}
+
+#loginPage.active {
+  display: flex;
+}
+
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+  width: 280px;
+}
+
+.login-box input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+.login-box button {
+  width: 95%;
+  padding: 10px;
+  background-color: #4B0082;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #35005c;
+}
+
+.hint {
+  font-size: 13px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* HEADER */
+header {
+  background-color: #4B0082;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 10px 0;
+  background: #5a0ca8;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
+
+/* GALERI */
+.gallery {
+  display: flex;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #eee;
+}
+
+/* ABSEN */
+form {
+  margin-bottom: 15px;
+}
+
+input, select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  margin-right: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #4B0082;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #360061;
+}
+
+.absen-container {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.print-btn {
+  margin-top: 10px;
+  background: #006400;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #4B0082;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+}

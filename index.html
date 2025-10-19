@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Class Info-4 | UMMU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- LOGIN -->
+  <div id="loginPage" class="active">
+    <div class="login-box">
+      <h2>Login Kelas Info-4</h2>
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button onclick="login()">Masuk</button>
+      <p class="hint">Login sebagai: <b>admin</b> / <b>mahasiswa</b></p>
+    </div>
+  </div>
+
+  <!-- WEB -->
+  <div id="mainPage">
+    <header>
+      <h1>Web Class Info-4</h1>
+      <p>Semester 3 - Universitas Muhammadiyah Maluku Utara (UMMU)</p>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showSection('home')">Home</a></li>
+          <li><a href="#" onclick="showSection('absen')">Daftar Hadir</a></li>
+          <li><a href="#" onclick="showSection('matakuliah')">Mata Kuliah</a></li>
+          <li><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section id="home" class="active">
+        <h2>Sejarah Kelas Info-4</h2>
+        <p>Kelas Info-4 Semester 3 merupakan salah satu kelas Teknik Informatika Universitas Muhammadiyah Maluku Utara (UMMU). Kelas ini dikenal aktif, kreatif, dan kompak dalam kegiatan akademik maupun non-akademik.</p>
+
+        <h3>Galeri Kelas</h3>
+        <div class="gallery">
+          <img src="https://via.placeholder.com/200" alt="Foto 1">
+          <img src="https://via.placeholder.com/200" alt="Foto 2">
+          <img src="https://via.placeholder.com/200" alt="Foto 3">
+        </div>
+      </section>
+
+      <!-- ABSEN -->
+      <section id="absen">
+        <h2>Daftar Hadir Mahasiswa</h2>
+        <form id="absenForm">
+          <input type="text" id="nama" placeholder="Masukkan Nama Mahasiswa" required>
+          <select id="status">
+            <option value="Hadir">Hadir</option>
+            <option value="Alpa">Alpa</option>
+            <option value="Sakit">Sakit</option>
+            <option value="Izin">Izin</option>
+          </select>
+          <button type="submit">Absen Sekarang</button>
+        </form>
+
+        <div class="absen-container">
+          <ul id="absenList"></ul>
+        </div>
+
+        <button onclick="printAbsen()" class="print-btn">🖨️ Cetak Daftar Hadir</button>
+      </section>
+
+      <!-- MATA KULIAH -->
+      <section id="matakuliah">
+        <h2>Daftar Mata Kuliah Semester 3 (Info-4)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Mata Kuliah</th>
+              <th>SKS</th>
+              <th>Dosen Pengampu</th>
+              <th>Hari</th>
+              <th>Jam</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Interaksi Manusia dan Komputer</td><td>2</td><td>Adelina Ibrahim, M.Eng</td><td>Senin</td><td>13:00–15:00</td></tr>
+            <tr><td>2</td><td>Sistem Basis Data I</td><td>3</td><td>Abdul Haris Muhammad, M.Kom</td><td>Senin</td><td>15:00–17:00</td></tr>
+            <tr><td>3</td><td>Kewarganegaraan</td><td>2</td><td>Muhammad Haji Noh, S.Sos., M.A</td><td>Selasa</td><td>13:00–14:30</td></tr>
+            <tr><td>4</td><td>Desain Web</td><td>3</td><td>Muh Dzikrullah Suratin, S.Kom., M.T</td><td>Selasa</td><td>15:00–17:00</td></tr>
+            <tr><td>5</td><td>Aljabar Linear dan Matriks</td><td>3</td><td>Syahrani Somadayo, ST., M.Si</td><td>Rabu</td><td>13:00–16:00</td></tr>
+            <tr><td>6</td><td>Statistika Dasar</td><td>2</td><td>Maya Rumakat, S.Pd., M.Pd</td><td>Kamis</td><td>13:00–14:30</td></tr>
+            <tr><td>7</td><td>Pemrograman Berorientasi Objek</td><td>3</td><td>Muh Ikhwan Ilyas, S.Kom., M.Kom</td><td>Kamis</td><td>15:00–17:00</td></tr>
+            <tr><td>8</td><td>Al-Islam Kemuhammadiyaan III</td><td>2</td><td>Hindra Sarifuddin, S.Pd.I</td><td>Jumat</td><td>15:30–17:00</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Info-4 | Universitas Muhammadiyah Maluku Utara (UMMU)</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
