@@ -3,7 +3,7 @@ function login() {
   const user = document.getElementById("username").value.trim();
   const pass = document.getElementById("password").value.trim();
 
-  if ((user === "admin" && pass === "admin") || (user === "mahasiswa" && pass === "mahasiswa")) {
+  if ((user === "info4" && pass === "info4keren") || (user === "mahasiswa" && pass === "mahasiswa")) {
     localStorage.setItem("loginUser", user);
     document.getElementById("loginPage").style.display = "none";
     document.getElementById("mainPage").style.display = "block";
@@ -73,3 +73,4 @@ function printAbsen() {
 
 // Render awal
 renderAbsen();
+
